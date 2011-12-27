@@ -18,21 +18,21 @@ namespace _1313
                     numbers[row, column] = int.Parse(data[column]);
             }
 
-            for (int c = 0; c < n; ++c)
+            for (int r = 0; r < n; ++r)
             {
-                int column = c;
-                int j = 0;
-                while (j >= 0 && column >= 0)
+                int row = r;
+                int column = 0;
+                while (row >= 0 && column >= 0)
                 {
-                    Console.Write(numbers[column, j]);
+                    Console.Write(numbers[row, column]);
                     Console.Write(" ");
-                    j += 1;
-                    column -= 1;
+                    row -= 1;
+                    column += 1;
                 }
             }
-            for (int r = 1; r < n; ++r)
+            for (int c = 1; c < n; ++c)
             {
-                int column = r;
+                int column = c;
                 int row = n - 1;
                 while (column < n && row >= 0)
                 {
