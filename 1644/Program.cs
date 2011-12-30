@@ -39,7 +39,7 @@ namespace _1644
                 if (tests[i] == 1 && first == -1)
                     first = i;
             }
-            Console.WriteLine(first);
+            Console.WriteLine(first == -1 ? 10 : first);
         }
     }
 }
