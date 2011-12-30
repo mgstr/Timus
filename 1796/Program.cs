@@ -5,6 +5,9 @@ using System.Text;
 
 namespace _1796
 {
+    /// <summary>
+    /// http://acm.timus.ru/problem.aspx?space=1&num=1796
+    /// </summary>
     class Program
     {
         static void Main()
